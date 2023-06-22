@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 4fr 1fr 2fr;
+    grid-template-rows: 2fr 3fr 3fr 2fr;
+    background-image: url(./interactive-card-form/imágenes/bg-main-desktop.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    row-gap: 40px;
+}
+
+.fimg {
+    grid-column: 2 / span 2;
+    grid-row: 2;
+    width: 100%;
+}
+
+.simg {
+    grid-column: 3 / 5;
+    grid-row: 3 / 4;
+    width: 100%;
+}
+
+.containerDos {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+}
+
+form {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px 100px;
+}
+
+label {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+input {
+    width: 100%;
+    margin: 13px 0;
+    padding: 14px;
+    border-radius: 10px;
+}
+
+.medium-flex {
+    width: 49%;
+}
+
+.small-flex {
+    width: 24%;
+}
+
+button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 18px;
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+}
